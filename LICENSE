@@ -1,24 +1,21 @@
-This is free and unencumbered software released into the public domain.
+Different components of meta-opendaq-sdk are under different licenses (a mix
+of Apache 2.0, MIT and GPL-2.0-only). LICENSE.APACHE-2.0, LICENSE.MIT and
+LICENSE.GPL-2.0-only for further details of the individual licenses.
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+All recipes-opendaq is Apache 2.0 licensed as the openDAQ SDK is published 
+with this license model. Source code included in tree for individual recipes 
+(e.g. patches) are under the LICENSE stated in the associated recipe (.bb file) 
+unless otherwise stated.
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+License information for any other files is either explicitly stated 
+or defaults to Apache 2.0.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+Individual files contain the following style tags instead of the full license 
+text to identify their license:
 
-For more information, please refer to <https://unlicense.org>
+    SPDX-License-Identifier: Apache-2.0
+    SPDX-License-Identifier: MIT
+    SPDX-License-Identifier: GPL-2.0-only
+
+This enables machine processing of license information based on the SPDX
+License Identifiers that are here available: http://spdx.org/licenses/
