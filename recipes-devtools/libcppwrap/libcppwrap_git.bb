@@ -2,6 +2,7 @@ SUMMARY = "A collection of C++ wrappers for native APIs"
 AUTHOR = "David Norris <danorris@gmail.com>"
 HOMEPAGE = "https://github.com/dvnrrs/libcppwrap"
 LICENSE = "MIT"
+PV = "1.3.10"
 
 SRC_URI = "git://github.com/dvnrrs/libcppwrap;protocol=https;branch=main"
 SRCREV = "v${PV}"
