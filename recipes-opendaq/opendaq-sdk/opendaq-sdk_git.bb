@@ -9,10 +9,13 @@ DEPENDS             = "boost date fmt mjansson-mdns spdlog taskflow tsl-ordered-
 # if mono is not in HOSTTOOLS, add mono-native as a dependency; see README.md at the top of this layer
 DEPENDS += "${@bb.utils.contains('HOSTTOOLS', 'mono', '', 'mono-native', d)}"
 
+# which openDAQ SDK Git branch to use
+OPENDAQ_SDK_BRANCH ?= "release/3.2"
+
 inherit cmake
 
 SRC_URI = "\
-    git://github.com/openDAQ/openDAQ.git;protocol=https;name=opendaq-sdk;branch=release/3.2 \
+    git://github.com/openDAQ/openDAQ.git;protocol=https;name=opendaq-sdk;branch=${OPENDAQ_SDK_BRANCH} \
     git://github.com/openDAQ/opc-ua-companion-spec.git;protocol=https;name=tmsspec;branch=master;destsuffix=deps/src/daqspec \
     git://github.com/hbkworld/opc-ua-specs.git;name=daqhbkspec;protocol=https;destsuffix=deps/src/daqhbkspec;branch=main \
 "
