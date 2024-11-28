@@ -3,7 +3,7 @@ AUTHOR              = "openDAQ d.o.o."
 HOMEPAGE            = "https://opendaq.com/"
 SECTION             = "openDAQ"
 LICENSE             = "Apache-2.0"
-PV                  = "1.0.8+git${SRCPV}"
+PV                  = "1.0.14+git${SRCPV}"
 DEPENDS             = "boost fmt libstream nlohmann-json spdlog"
 
 inherit cmake
@@ -15,7 +15,7 @@ LIC_FILES_CHKSUM += "\
     file://LICENSE.txt;md5=ceb49615d7c1685dfffae5d7a2a5187f \
 "
 
-SRCREV = "429f2a7ffcff0d80849318fd086c57ac005d7bd9"
+SRCREV = "fc0d0a58931f98663d29f828593bd597ace26c55"
 S = "${WORKDIR}/git"
 
 PARALLEL_MAKE = "-j 6"
