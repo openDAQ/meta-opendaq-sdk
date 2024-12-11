@@ -23,8 +23,9 @@ SRC_URI = "\
 LIC_FILES_CHKSUM += "file://LICENSE;md5=98b4c298fafe3a9dc30f957028ce3224"
 
 SRCREV_FORMAT = "opendaq-sdk_tmsspec"
-# v3.10.0
-SRCREV_opendaq-sdk = "92f0c0053d5ce17ae2862a1492fedefb0fc80929"
+# after v3.10.0
+# includes: [TBASS-1927] Property values are written before validation
+SRCREV_opendaq-sdk = "d82c734e10a1eb0788b01348b6b9610dd75691ff"
 SRCREV_tmsspec = "9f7306e702e3cf698ff7fcabe421ef4c9b77139d"
 SRCREV_daqhbkspec = "cd7e6033eb74b7f1725edbf2035f0e4c6fa2cc96"
 
