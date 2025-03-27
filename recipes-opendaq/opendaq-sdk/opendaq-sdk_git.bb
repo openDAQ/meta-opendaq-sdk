@@ -3,14 +3,14 @@ AUTHOR              = "openDAQ d.o.o."
 HOMEPAGE            = "https://opendaq.com/"
 SECTION             = "openDAQ"
 LICENSE             = "Apache-2.0"
-PV                  = "3.2.6+git${SRCPV}"
+PV                  = "3.20.0+git${SRCPV}"
 DEPENDS             = "boost date fmt mjansson-mdns spdlog taskflow tsl-ordered-map xxhash"
 
 # if mono is not in HOSTTOOLS, add mono-native as a dependency; see README.md at the top of this layer
 DEPENDS += "${@bb.utils.contains('HOSTTOOLS', 'mono', '', 'mono-native', d)}"
 
 # which openDAQ SDK Git branch to use
-OPENDAQ_SDK_BRANCH ?= "release/3.2"
+OPENDAQ_SDK_BRANCH ?= "release-candidate/3.20"
 
 inherit cmake
 
@@ -23,8 +23,8 @@ SRC_URI = "\
 LIC_FILES_CHKSUM += "file://LICENSE;md5=98b4c298fafe3a9dc30f957028ce3224"
 
 SRCREV_FORMAT = "opendaq-sdk_tmsspec"
-# v3.2.9
-SRCREV_opendaq-sdk = "d42e173c8f1b8dd1f6bcaa0f441b17111a3cf638"
+# v3.20.0
+SRCREV_opendaq-sdk = "c138338096c0c051b8625b13568b8147812cc485"
 SRCREV_tmsspec = "9f7306e702e3cf698ff7fcabe421ef4c9b77139d"
 SRCREV_daqhbkspec = "cd7e6033eb74b7f1725edbf2035f0e4c6fa2cc96"
 
